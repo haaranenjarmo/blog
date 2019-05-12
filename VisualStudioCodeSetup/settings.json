@@ -1,0 +1,10 @@
+{
+    "window.zoomLevel": 1,
+    "azureFunctions.templateFilter": "All",
+    "azureFunctions.projectLanguage": "PowerShell",
+    "azureFunctions.projectRuntime": "~2",
+    "workbench.startupEditor": "newUntitledFile",
+    "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "workbench.settings.editor": "json"
+}
