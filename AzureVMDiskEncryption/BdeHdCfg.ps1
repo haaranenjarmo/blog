@@ -6,4 +6,4 @@ Copy-Item -Path "$pathBdeHdCfg\BdeHdCfg\BdeHdCfg.exe" -Destination C:\Windows\Sy
 Copy-Item -Path "$pathBdeHdCfg\BdeHdCfg\BdeHdCfgLib.dll" -Destination C:\Windows\System32 -ToSession $session
 Copy-Item -Path "$pathBdeHdCfg\BdeHdCfg\en-Us\BdeHdCfg.exe.mui" -Destination C:\Windows\System32\en-US -ToSession $session
 Copy-Item -Path "$pathBdeHdCfg\BdeHdCfg\en-Us\BdeHdCfgLib.dll.mui" -Destination C:\Windows\System32\en-US -ToSession $session
-Invoke-Command -Session $session -ScriptBlock {bdehdcfg.exe -target default}
+Invoke-Command -Session $session -ScriptBlock {C:\Windows\System32\bdehdcfg.exe -target default}
