@@ -10,7 +10,11 @@ Invoke-WebRequest -uri $coreUrl -OutFile $file
 $arguments = '/i', "$file", '/qb-!'
 Start-Process 'msiexec.exe' -ArgumentList $arguments -NoNewWindow -Wait
 Start-Process 'C:\Program Files\PowerShell\6\pwsh.exe' -Wait -PassThru -NoNewWindow
+$PSVersionTable
 #endregion PSCoreInstallation
+#region NetCoreInstallation
+"https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.203-windows-x64-installer"
+#endregion NetCoreInstallation
 #region VSCodeInstallationAndConfiguration
 #VSCode Installation and configuration PowerShell Core commands
 New-Item -Path C:\VisualStudioCode -Type Directory -Force
